@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- <h2>Enter Some Text</h2>
+
+    <p>Event will be fired when the input element lose focus after value update.</p>
+    <input type="text" name="txt" value="" onchange="myFunction(this.value)">
+    <p id='show'></p>
+    
+    <script>
+        function myFunction(val) {
+            var x = document.getElementById('show');
+            x.innerHTML = "Entered Value is: " + val;
+        }
+    </script> -->
+
+
+
+    <!-- <h2>Select any Element</h2>
+    <p>The event will be fired after the selection and the function associated with onchange will execute.</p>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="" disabled selected hidden>Choose a Technology</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="PHP">PHP</option>
+    </select>
+
+
+    <p id="show"></p>
+
+    <script>
+        function myFunction() {
+            var value = document.getElementById("mySelect").value;
+            var x = document.getElementById("show")
+            x.innerHTML = "Selected Value: " + value;
+        }
+    </script> -->
+
+
+    <h2>Choose a Option</h2>
+    <p>The event will be fired after the selection and the function associated with onchange will execute.</p>
+
+
+    <input type="radio" value="HTML" name="radioExample" onchange="myFunction(this.value)">
+    <label for="html">HTML</label><br>
+    <input type="radio" value="CSS" name="radioExample" onchange="myFunction(this.value)">
+    <label for="css">CSS</label><br>
+    <input type="radio" value="JavaScript" name="radioExample" onchange="myFunction(this.value)">
+    <label for="javascript">JavaScript</label><br>
+    <input type="radio" value="PHP" name="radioExample" onchange="myFunction(this.value)">
+    <label for="PHP">PHP</label>
+
+    <p id="show"></p>
+
+    <script>
+        function myFunction(value) {
+            var x = document.getElementById("show")
+            x.innerHTML = "Selected Option: " + value;
+        }
+    </script>
+
+
+</body>
+
+</html>

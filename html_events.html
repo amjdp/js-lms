@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <body> -->
+
+<body onload="window.alert('Page successfully loaded');">  
+
+    <!-- The change in the state of an object is known as an Event. In html, there
+    are various events which represents that some activity is performed by the
+    user or by the browser. When javascript code is included in HTML, js react
+    over these events and allow the execution. This process of reacting over the
+    events is called Event Handling. Thus, js handles the HTML events via Event
+    Handlers. 
+    
+    For example, when a user clicks over the browser, add js code,
+    which will execute the task to be performed on the event. 
+    
+    Some of the HTML
+    events and their event handlers are: 
+    
+    Mouse events: 
+    Event Performed Event Handler Description 
+    click | onclick When mouse click on an element 
+    mouseover | onmouseover When the cursor of the mouse comes over the element 
+    mouseout | onmouseout When the cursor of the mouse leaves an element 
+    mousedown | onmousedown When the mouse button is pressed over the element 
+    mouseup | onmouseup When the mouse button is released over the element 
+    mousemove | onmousemove When the mouse movement takes place. 
+    
+    Keyboard events: 
+    Event Performed Event Handler Description 
+    Keydown & Keyup | onkeydown & onkeyup When the user press and then release the key 
+    
+    Form events: 
+    Event Performed Event Handler Description 
+    focus | onfocus When the user focuses on an element 
+    submit | onsubmit When the user submits the form 
+    blur | onblur When the focus is away from a form element 
+    change | onchange When the user modifies or changes the value of a form element 
+    
+    Window/Document events 
+    Event Performed Event Handler Description 
+    load | onload When the browser finishes the loading of the page
+    unload | onunload When the visitor leaves the current webpage, the browser unloads it 
+    resize | onresize When the visitor resizes the window of the browser -->
+
+
+    <input type="button" onClick="clickevent()" value="Click Here"/>  <br><br>
+
+    <!-- <p onmouseover="mouseoverevent()"> Keep cursor over me</p> -->  <br><br>
+
+    <input type="text" id="input1" onfocus="focusevent()"/>  <br><br>
+
+    <input type="text" id="input1" onkeydown="keydownevent()"/>  <br><br>
+
+    <script>
+        function clickevent()  
+        {  
+            document.write("Clicked");  
+        } 
+
+        function mouseoverevent()  
+        {  
+            alert("mouse over me");  
+        } 
+
+        function focusevent()  
+        {  
+            document.getElementById("input1").style.background=" aqua";  
+        }  
+
+        function keydownevent()  
+        {  
+            document.getElementById("input1");  
+            alert("Pressed a key");  
+        }
+
+        document.write("The page is loaded successfully"); 
+
+    </script>
+
+ 
+
+
+  </body>
+</html>

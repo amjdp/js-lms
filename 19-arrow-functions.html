@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // normal functions
+      function add(num1, num2) {
+        total = num1 + num2;
+        console.log(total);
+      }
+      add(1, 2);
+
+      // arrow functions
+      var add = (num1, num2) => {
+        total = num1 + num2;
+        console.log(total);
+      };
+      add(2, 3);
+      check = add; //Reference to function
+      check(2, 6);
+
+      // Single input argument arrow function
+      func = (arg1) => {
+        console.log(arg1);
+      };
+      // or
+      func = (arg1) => {
+        console.log(arg1);
+      };
+      func(10);
+
+      // No input argument
+      func = () => {
+        console.log("hello");
+      };
+      func();
+
+      // Single line function body
+      func = (arg1, arg2) => arg1 + arg2;
+      console.log(func(3, 6));
+
+      // Single expression broken over multiple line
+      func = (numArray) =>
+        numArray.filter((num) => num > 10).map((num) => num ** 2);
+
+      // Object literal return value
+      func = (arg1, arg2) => ({ key1: arg1, key2: arg2 });
+
+      //template le=iterals
+      name = "Cyber Square";
+      console.log(`My name is ${name}`);
+
+      // Destructuring
+      const languages = ["Python", "Java", "JavaScript"];
+      let [l1, l2, l3] = languages;
+      // is equivalent to
+      l1 = languages[0];
+      l2 = languages[1];
+      l3 = languages[2];
+
+      let [, , js] = languages;
+
+      const employee = {
+        name: "John",
+        age: 25,
+        designation: "Programmer",
+        department: "IT",
+      };
+
+      // Use variable names same as the key
+      const { name, age, designation, department } = employee;
+      console.log(name, age, designation, department);
+
+      //spread operator
+      numbers = [1, 2, 3];
+      newNumbers = [numbers, 4, 5];
+      console.log(newNumbers);
+
+      numbers = [1, 2, 3];
+      newNumbers = [...numbers, 4, 5];
+      console.log(newNumbers);
+
+      let employee_1 = {
+        name: 'John',
+        age: 25,
+        designation: 'Programmer',
+        department: 'IT'
+       };
+       
+       employee_1 = {...employee_1,
+          department: 'Software development',
+          gender: 'Male'
+       }
+       // Modifies the value of existing key, adds new one
+       console.log(employee);
+    </script>
+  </body>
+</html>

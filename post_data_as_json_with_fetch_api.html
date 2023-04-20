@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST Form Data as JSON with JavaScript Fetch API</title>
+</head>
+<body>
+    
+    <form class="form">
+        <input name="username" type="text" placeholder="username">
+        <input name="password" type="password" placeholder="password">
+        <input name="termsconditions" type="checkbox">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- if the user fills pout the form and clicks submit we want to send that to the server in JSON format  -->
+    <!-- first we have to collect data from form  -->
+
+    <script>
+        const formE1 = document.querySelector('.form');
+
+        formE1.addEventListener('submit', (event) => {
+             event.preventDefault();
+
+             const formData = new FormData(formE1)
+             
+        })
+    </script>
+</body>
+</html>
